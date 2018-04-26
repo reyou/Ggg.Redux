@@ -1,4 +1,5 @@
 //=============================================================================
-export const LOAD_CATS_SUCCESS = "LOAD_CATS_SUCCESS";
+export const LOAD_HOME_ITEMS = "LOAD_HOME_ITEMS";
+export const CREATE_USER = "CREATE_USER";
 
 //=============================================================================

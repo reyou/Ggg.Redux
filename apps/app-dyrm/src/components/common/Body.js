@@ -1,16 +1,15 @@
 // http://www.thegreatcodeadventure.com/react-redux-tutorial-part-ii-react-router-and-container-components/
 //=============================================================================
 import React from "react";
-// https://reactjs.org/docs/typechecking-with-proptypes.html
-// https://www.npmjs.com/package/prop-types
-import PropTypes from "prop-types"; // ES6
-import { Link, IndexLink } from "react-router";
+// <Switch>
+// Renders the first child <Route> or <Redirect> that matches the location.
+import { Link, IndexLink, Switch, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-
+import HomePage from "../pages/HomePage";
 // import GggLogger from "../../gggUtils/GggLogger";
 //=============================================================================
-class Header extends React.Component {
+class Body extends React.Component {
   constructor(props) {
     super();
     this.logOut = this.logOut.bind(this);
@@ -23,7 +22,15 @@ class Header extends React.Component {
   }
 
   render() {
-    return <div className="container-fluid">This is header in component.</div>;
+    return (
+      <div className="container-fluid">
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          {/* <Route path="/roster" component={Roster} />
+          <Route path="/schedule" component={Schedule} /> */}
+        </Switch>
+      </div>
+    );
   }
 }
 
@@ -35,6 +42,6 @@ function mapDispatchToProps(dispatch) {
   return {};
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Body);
 
 //=============================================================================
