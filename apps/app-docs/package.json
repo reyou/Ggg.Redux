@@ -1,0 +1,32 @@
+{
+  "name": "ggg-redux-app",
+  "version": "1.0.0",
+  "description": "sample app for redux Ggg.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel docs --out-dir docs-compiled --watch",
+    "prepublish": "npm run compile"
+  },
+  "keywords": ["ggg", "redux", "foodception"],
+  "author": "aozdemir",
+  "license": "ISC",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "fetch-promise": "^1.0.2",
+    "node-fetch": "^2.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "redux-devtools": "^3.4.1"
+  }
+}

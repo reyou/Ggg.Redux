@@ -1,0 +1,7 @@
+//=============================================================================
+Babel preset for React HMR and Error Catching
+npm install babel-preset-react-hmre --save-dev
+https://www.npmjs.com/package/babel-preset-react-hmre
+//=============================================================================
+
+

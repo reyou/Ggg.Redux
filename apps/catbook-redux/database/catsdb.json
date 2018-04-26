@@ -1,0 +1,16 @@
+[
+  {
+    id: 1,
+    name: "Moe",
+    weight: "heavy",
+    temperament: "protective",
+    hobby_ids: [1, 2]
+  },
+  {
+    id: 2,
+    name: "Mini",
+    weight: "heavy",
+    temperament: "sweet",
+    hobby_ids: [1]
+  }
+]
